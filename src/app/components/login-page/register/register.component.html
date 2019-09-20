@@ -2,7 +2,7 @@
         <div class="card-body">
             <h1 class="text-center pb-4 pt3"> <span class="text-primary">Punch
                     Clock </span>Register</h1>
-            <form (submit)="onSubmit()">
+            <form name="myForm" #myForm="ngForm" (submit)="onSubmit()">
                 <div class="form-group">
                     <label for="username">Username</label>
                     <input type="text" name="username" [(ngModel)]="username" class="form-control" required>
